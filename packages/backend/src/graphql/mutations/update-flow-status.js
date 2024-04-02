@@ -7,7 +7,7 @@ import {
 import globalVariable from '../../helpers/global-variable.js';
 
 const JOB_NAME = 'flow';
-const EVERY_15_MINUTES_CRON = '*/15 * * * *';
+const EVERY_15_MINUTES_CRON = '*/1 * * * *';
 
 const updateFlowStatus = async (_parent, params, context) => {
   const conditions = context.currentUser.can('publish', 'Flow');
